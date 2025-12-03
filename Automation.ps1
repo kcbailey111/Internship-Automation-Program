@@ -1,4 +1,4 @@
-<#Author: Kyler B.
+<#Author: Kyler B.  
 Date: July 7, 2025
 Program was orginially developed in Windows PowerShell ISE console.
 This automation program takes an Excel file from Dell and processes asset 
@@ -29,10 +29,10 @@ Write-Host "Setting up API connection and Credentials..." -ForegroundColor Yello
 
 ################ITA API Setup
 #ITA API Details
-$itmsApiUrl = "https://milliken-amc-stg.ivanticloud.com/api/odata/businessobject/cis"
-$incidentApiUrl = "https://milliken-amc-stg.ivanticloud.com/api/odata/businessobject/incidents"
-$journalApiUrl = "https://milliken-amc-stg.ivanticloud.com/api/odata/businessobject/journal__notess"
-$apiKey = "4E57B85DE161465C8FAD7F0E9BF307CA"
+$itmsApiUrl = "URL_HERE"
+$incidentApiUrl = "URL_HERE"
+$journalApiUrl = "URL_HERE"
+$apiKey = "##########################"
 
 $ITA_Headers = @{
     "Authorization" = "rest_api_key=$apiKey"
