@@ -107,9 +107,9 @@ function Get-Warranty {
 function Get-Location {
     param ($inputValue)
 
-    if ($inputValue -eq "US") {return "RMC Roger Milliken Center"}
+    if ($inputValue -eq "US") {return "IT Center"}
 
-    return "RMC Roger Milliken Center" #THIS IS A PLACEHOLDER USED FOR TESTING
+    return "IT Center" #THIS IS A PLACEHOLDER USED FOR TESTING
     #Has to be a location that is validated by Ivanti
     
 }
@@ -118,7 +118,7 @@ function Get-Location {
 function Get-Storage {
     param ($inputVal)
 
-    if ($inputVal -eq "US") {return "RMC Intake" }
+    if ($inputVal -eq "US") {return "IT Intake" }
     return "RMC Intake" #Has to be a validated input by Ivanti
     
 }
@@ -141,7 +141,7 @@ function Get-RecID{
     param($serialNumber)
     Write-Host "Retrieving RecID for Serial Number: $serialNumber"
 
-     $url = "https://milliken-amc-stg.ivanticloud.com/api/odata/businessobject/cis?$" + "filter" + "=SerialNumber eq '" + $serialNumber + "'"
+     $url = "URL_HERE" + "filter" + "=SerialNumber eq '" + $serialNumber + "'"
 
     try{
 
